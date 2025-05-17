@@ -1,0 +1,334 @@
+/* About Section Styles */
+.about-section {
+    position: relative;
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+  }
+  
+  /* Content Layout */
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    position: relative;
+    margin-top: 3rem;
+  }
+  
+  /* Image Styles */
+  .about-image-container {
+    position: relative;
+  }
+  
+  .about-image-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .about-image-shape {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-lg);
+    bottom: -30px;
+    right: -30px;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  
+  .about-experience {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .experience-years {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-secondary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-text {
+    font-size: 0.875rem;
+    color: var(--color-gray-700);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  /* Text & Tabs Styles */
+  .about-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-gray-300);
+    padding-bottom: 0.5rem;
+  }
+  
+  .about-tab {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-600);
+    cursor: pointer;
+    position: relative;
+    transition: color var(--transition-fast);
+  }
+  
+  .about-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-secondary);
+    transition: width var(--transition-fast);
+    border-radius: 3px;
+  }
+  
+  .about-tab:hover {
+    color: var(--color-secondary);
+  }
+  
+  .about-tab.active {
+    color: var(--color-secondary);
+  }
+  
+  .about-tab.active::after {
+    width: 100%;
+  }
+  
+  .about-subtitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-gray-800);
+    letter-spacing: -0.01em;
+  }
+  
+  .about-description {
+    color: var(--color-gray-700);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  
+  /* Mission Highlights */
+  .mission-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .mission-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .highlight-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(106, 38, 198, 0.1);
+    border-radius: 50%;
+    color: var(--color-secondary);
+  }
+  
+  .highlight-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .highlight-text {
+    font-weight: 600;
+    color: var(--color-gray-800);
+  }
+  
+  /* Story Timeline */
+  .story-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    border-left: 2px dashed var(--color-gray-300);
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.55rem;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+  }
+  
+  .timeline-year {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .timeline-content {
+    color: var(--color-gray-700);
+  }
+  
+  /* Values Grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .value-card {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .value-card-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(106, 38, 198, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+  }
+  
+  .value-card-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .value-card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-800);
+  }
+  
+  .value-card-text {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .about-content {
+      gap: 2.5rem;
+    }
+    
+    .mission-highlights {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .about-image-container {
+      order: 1;
+    }
+    
+    .about-text {
+      order: 2;
+    }
+    
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-tabs {
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+    
+    .about-experience {
+      top: auto;
+      bottom: -20px;
+      right: 20px;
+      padding: 1rem;
+      min-width: 100px;
+    }
+    
+    .experience-years {
+      font-size: 2rem;
+    }
+    
+    .about-image-shape {
+      width: 70%;
+      height: 70%;
+      bottom: -20px;
+      right: -20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-subtitle {
+      font-size: 1.5rem;
+    }
+    
+    .mission-highlight-item {
+      width: 100%;
+    }
+  }

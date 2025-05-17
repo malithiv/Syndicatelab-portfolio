@@ -1,0 +1,156 @@
+/* App Specific Styles */
+
+/* Import Variables & Base Styles */
+@import './variables.css';
+@import './index.css';
+
+/* Main Container Styles */
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  position: relative;
+}
+
+/* Background Elements & Patterns */
+.bg-dots {
+  position: absolute;
+  background-image: radial-gradient(var(--color-gray-200) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+
+.bg-accent-blur {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background-color: var(--color-secondary);
+  opacity: 0.05;
+  border-radius: 100%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-secondary);
+  transform-origin: 0%;
+  z-index: var(--z-index-navbar);
+}
+
+/* Common card styles */
+.card {
+  background: var(--color-primary);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-fast);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--border-radius-lg);
+}
+
+/* Fancy border animation */
+.border-animated {
+  position: relative;
+}
+
+.border-animated::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(90deg, var(--color-secondary), transparent 40%, transparent 60%, var(--color-secondary));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: borderAnimation 3s infinite linear;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-secondary), var(--color-purple-dark));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-purple-dark);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablet adjustments */
+}
+
+@media (max-width: 768px) {
+  /* Mobile adjustments */
+  .bg-accent-blur {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile adjustments */
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .bg-accent-blur {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
