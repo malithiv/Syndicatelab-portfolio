@@ -134,7 +134,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Our Location</h4>
-                  <p className="contact-item-text">123 Innovation Drive, Tech District, San Francisco, CA 94103</p>
+                  <p className="contact-item-text">Negambo, Sri Lanka</p>
                 </div>
               </div>
               
@@ -146,8 +146,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Email Us</h4>
-                  <p className="contact-item-text">info@syndicatedigitallabs.com</p>
-                  <p className="contact-item-text">support@syndicatedigitallabs.com</p>
+                  <p className="contact-item-text">info@syndicatedl.com</p>
+                  {/* <p className="contact-item-text">support@syndicatedigitallabs.com</p> */}
                 </div>
               </div>
               
@@ -159,8 +159,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Call Us</h4>
-                  <p className="contact-item-text">+1 (555) 123-4567</p>
-                  <p className="contact-item-text">+1 (555) 987-6543</p>
+                  <p className="contact-item-text">+94 74 006 2378</p>
+                  {/* <p className="contact-item-text">+1 (555) 987-6543</p> */}
                 </div>
               </div>
             </div>

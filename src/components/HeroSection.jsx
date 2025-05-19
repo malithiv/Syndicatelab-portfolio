@@ -90,17 +90,17 @@ const HeroSection = () => {
               transition={{ duration: 1, delay: 0.8 }}
             >
               <div className="stat-item">
-                <div className="stat-number">100+</div>
+                <div className="stat-number">10+</div>
                 <div className="stat-label">Projects Delivered</div>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-item">
-                <div className="stat-number">50+</div>
-                <div className="stat-label">Happy Clients</div>
+                <div className="stat-number">250+</div>
+                <div className="stat-label">Agents</div>
               </div>
               <div className="stat-divider"></div>
               <div className="stat-item">
-                <div className="stat-number">8+</div>
+                <div className="stat-number">2+</div>
                 <div className="stat-label">Years Experience</div>
               </div>
             </motion.div>
