@@ -9,34 +9,34 @@ const BlogSection = () => {
     threshold: 0.1,
     triggerOnce: false
   });
-  
+
   const blogPosts = [
     {
       id: 1,
-      image: "/blog-img1.jpg",
+      image: "src/assets/blog-img1.jpg",
       date: "March 15, 2023",
       author: "Alex Mitchell",
       title: "The Future of AI in Software Development",
-      excerpt: "Explore how artificial intelligence is revolutionizing the way we build and maintain software applications.",
+      excerpt: "Explore how artificial intelligence is revolutionizing the way we build and maintain software applications."
     },
     {
       id: 2,
-      image: "/blog-img2.jpg",
+      image: "src/assets/blog-img2.jpg",
       date: "February 22, 2023",
       author: "Sarah Johnson",
       title: "Building Scalable Web Applications with React and Vite",
-      excerpt: "Learn the best practices for creating high-performance web applications using modern frontend technologies.",
+      excerpt: "Learn the best practices for creating high-performance web applications using modern frontend technologies."
     },
     {
       id: 3,
-      image: "/blog-img3.jpg",
+      image: "src/assets/blog-img3.jpg",
       date: "February 10, 2023",
       author: "Michael Chen",
       title: "Securing Your Cloud Infrastructure: Essential Strategies",
-      excerpt: "Discover effective approaches to protect your cloud-based applications and data from security threats.",
+      excerpt: "Discover effective approaches to protect your cloud-based applications and data from security threats."
     }
   ];
-  
+
   return (
     <section id="blog" className="blog-section" ref={ref}>
       <motion.div 
@@ -69,7 +69,7 @@ const BlogSection = () => {
             Stay updated with our latest articles, tutorials, and insights on software development and technology trends.
           </motion.p>
         </div>
-        
+
         <div className="blog-grid">
           {blogPosts.map((post, index) => (
             <motion.div 
@@ -104,15 +104,12 @@ const BlogSection = () => {
                   className="blog-read-more"
                 >
                   Read More
-                  <svg xmlns="http://www.w3.org/2000/svg" className="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
                 </Link>
               </div>
             </motion.div>
           ))}
         </div>
-        
+
         <motion.div
           className="blog-cta"
           initial={{ opacity: 0 }}

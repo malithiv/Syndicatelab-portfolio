@@ -113,18 +113,11 @@ const HeroSection = () => {
             variants={imageVariants}
           >
             <div className="hero-image-container">
-              <div className="hero-image-border"></div>
               <img 
                 src={heroImage} 
                 alt="Syndicate Digital Labs Solutions" 
-                className="hero-img"
+                // className="hero-img"
               />
-              <div className="hero-tech-stack">
-                <div className="tech-badge">React</div>
-                <div className="tech-badge">Node.js</div>
-                <div className="tech-badge">AI</div>
-                <div className="tech-badge">Cloud</div>
-              </div>
             </div>
           </motion.div>
         </div>

@@ -9,7 +9,7 @@ const PortfolioSection = () => {
   const projects = [
     {
       id: 1,
-      image: "/project-img1.jpg",
+      image: "src/assets/project-img1.jpg",
       category: "Web Application",
       client: "Fintech Solutions Inc.",
       title: "Advanced Analytics Dashboard",
@@ -18,7 +18,7 @@ const PortfolioSection = () => {
     },
     {
       id: 2,
-      image: "/project-img2.jpg",
+      image: "src/assets/project-img2.jpg",
       category: "Mobile Application",
       client: "HealthCare Connect",
       title: "Telehealth Platform",
@@ -27,7 +27,7 @@ const PortfolioSection = () => {
     },
     {
       id: 3,
-      image: "/project-img3.jpg",
+      image: "src/assets/project-img3.jpg",
       category: "AI Solution",
       client: "RetailTech Innovations",
       title: "Inventory Optimization System",
@@ -36,7 +36,7 @@ const PortfolioSection = () => {
     },
     {
       id: 4,
-      image: "/project-img4.jpg",
+      image: "src/assets/project-img1.jpg",
       category: "E-Commerce",
       client: "FashionForward",
       title: "Omnichannel Shopping Experience",
@@ -45,7 +45,7 @@ const PortfolioSection = () => {
     },
     {
       id: 5,
-      image: "/project-img5.jpg",
+      image: "src/assets/project-img1.jpg",
       category: "IoT Solution",
       client: "Smart Building Systems",
       title: "Connected Building Management",
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
     },
     {
       id: 6,
-      image: "/project-img6.jpg",
+      image: "src/assets/project-img1.jpg",
       category: "Cloud Migration",
       client: "Global Logistics Corp",
       title: "Legacy System Modernization",

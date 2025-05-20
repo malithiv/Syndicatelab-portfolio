@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
       id: 1,
       name: "Sarah Johnson",
       position: "CTO, FinanceHub Inc.",
-      avatar: "/avatar-1.jpg",
+      avatar: "src/assets/avatar-1.jpg",
       content: "Syndicate Digital Labs transformed our outdated systems into a streamlined digital platform that has dramatically improved our operational efficiency. Their team's technical expertise and strategic approach to problem-solving made them invaluable partners in our digital transformation journey.",
       rating: 5
     },
@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
       id: 2,
       name: "Michael Chen",
       position: "Founder, TechStart",
-      avatar: "/avatar-2.jpg",
+      avatar: "src/assets/avatar-2.jpg",
       content: "Working with Syndicate Digital Labs was a game-changer for our startup. They helped us build an MVP that secured our next round of funding. Their ability to translate our vision into a robust, scalable solution exceeded our expectations.",
       rating: 5
     },
@@ -27,7 +27,7 @@ const TestimonialsSection = () => {
       id: 3,
       name: "Jennifer Martinez",
       position: "Director of Innovation, Healthcare Solutions",
-      avatar: "/avatar-3.jpg",
+      avatar: "src/assets/avatar-1.jpg",
       content: "The AI solution developed by Syndicate Digital Labs has revolutionized how we process patient data, leading to faster diagnoses and improved patient outcomes. Their deep understanding of both technology and healthcare challenges set them apart from other providers we've worked with.",
       rating: 5
     },
@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
       id: 4,
       name: "David Wilson",
       position: "VP of E-commerce, RetailNow",
-      avatar: "/avatar-4.jpg",
+      avatar: "src/assets/avatar-2.jpg",
       content: "Our e-commerce platform redevelopment with Syndicate Digital Labs resulted in a 40% increase in conversion rates and a significant improvement in customer satisfaction scores. Their attention to UX details and performance optimization was impressive.",
       rating: 5
     }
@@ -122,19 +122,19 @@ const TestimonialsSection = () => {
           <h3 className="brands-title">Trusted by Leading Companies</h3>
           <div className="brands-grid">
             <div className="brand-logo">
-              <img src="/brand-logo1.png" alt="Brand Logo" />
+              <img src="src/assets/brand-logo1.png" alt="Brand Logo" />
             </div>
             <div className="brand-logo">
-              <img src="/brand-logo2.png" alt="Brand Logo" />
+              <img src="src/assets/brand-logo2.png" alt="Brand Logo" />
             </div>
             <div className="brand-logo">
-              <img src="/brand-logo3.png" alt="Brand Logo" />
+              <img src="src/assets/brand-logo3.png" alt="Brand Logo" />
             </div>
             <div className="brand-logo">
-              <img src="/brand-logo4.png" alt="Brand Logo" />
+              <img src="src/assets/brand-logo1.png" alt="Brand Logo" />
             </div>
             <div className="brand-logo">
-              <img src="/brand-logo5.png" alt="Brand Logo" />
+              <img src="src/assets/brand-logo1.png" alt="Brand Logo" />
             </div>
           </div>
         </motion.div>

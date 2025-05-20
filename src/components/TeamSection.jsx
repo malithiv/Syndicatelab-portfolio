@@ -12,7 +12,7 @@ const TeamSection = () => {
       name: "Alex Morgan",
       position: "CEO & Founder",
       bio: "With over 15 years of experience in technology leadership, Alex founded Syndicate Digital Labs with a vision to help businesses leverage technology for growth.",
-      image: "/team-member1.jpg",
+      image: "src/assets/team-member1.jpg",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -24,7 +24,7 @@ const TeamSection = () => {
       name: "Sophia Chen",
       position: "CTO",
       bio: "Sophia brings deep technical expertise in AI and cloud architecture, leading our technical strategy and ensuring we stay at the cutting edge of technology.",
-      image: "/team-member2.jpg",
+      image: "src/assets/team-member2.jpg",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -36,7 +36,7 @@ const TeamSection = () => {
       name: "Marcus Johnson",
       position: "Design Director",
       bio: "Marcus leads our UX/UI design team, ensuring all our solutions deliver exceptional user experiences through intuitive, accessible, and beautiful interfaces.",
-      image: "/team-member3.jpg",
+      image: "src/assets/team-member3.jpg",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -48,7 +48,7 @@ const TeamSection = () => {
       name: "Priya Patel",
       position: "Project Director",
       bio: "Priya excels at managing complex projects, ensuring they're delivered on time, within budget, and exceed client expectations at every milestone.",
-      image: "/team-member4.jpg",
+      image: "src/assets/team-member2.jpg",
       social: {
         linkedin: "#",
         twitter: "#",
