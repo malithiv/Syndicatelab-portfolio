@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import '../styles/PortfolioSection.css';
+import { Link } from 'react-router-dom';
 
 const PortfolioSection = () => {
   const ref = useRef(null);
@@ -170,14 +171,12 @@ const PortfolioSection = () => {
                   ))}
                 </div>
                 
-                <div className="project-actions">
-                  <a href={`#project-${project.id}`} className="project-link">
-                    View Details
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                </div>
+                <Link to={`/work/${project.id}`} className="project-link">
+  View Details
+  <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 20 20" fill="currentColor">
+    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+  </svg>
+</Link>
               </div>
             </motion.div>
           ))}

@@ -7,6 +7,7 @@ import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import ServiceDetailPage from './components/ServiceDetailPage';
 import PortfolioSection from './components/PortfolioSection';
+import WorkDetails from './components/WorkDetails';
 import TestimonialsSection from './components/TestimonialsSection';
 import TeamSection from './components/TeamSection';
 import BlogSection from './components/BlogSection';
@@ -15,6 +16,8 @@ import Footer from './components/Footer';
 import Preloader from './components/Preloader';
 import BlogPost from './components/BlogPost';
 import './styles/App.css';
+import WhyChooseUsSection from './components/WhyChooseUsSection'
+
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -58,6 +61,7 @@ const App = () => {
                 <HeroSection />
                 <AboutSection />
                 <ServicesSection />
+                <WhyChooseUsSection/>
                 <PortfolioSection />
                 <TestimonialsSection />
                 <TeamSection />
@@ -71,6 +75,14 @@ const App = () => {
             <Route path="/services/:serviceId" element={
               <main className="main-content">
                 <ServiceDetailPage />
+                <Footer />
+              </main>
+            } />
+            
+            {/* Work Detail Page Route */}
+            <Route path="/work/:id" element={
+              <main className="main-content">
+                <WorkDetails/>
                 <Footer />
               </main>
             } />
