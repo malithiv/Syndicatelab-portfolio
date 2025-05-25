@@ -44,15 +44,15 @@ const NavBar = () => {
           </Link>
           
           <div className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
-            <a href="#home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a>
-            <a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
-            <a href="#services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a href="#portfolio" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Work</a>
-            <a href="#team" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Team</a>
-            <a href="#blog" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Insights</a>
-            <a href="#contact" className="nav-link contact-link" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+            <Link to="/work" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Work</Link>
+            <Link to="/team" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Team</Link>
+            <Link to="/blog" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Insights</Link>
+            <Link to="/contact" className="nav-link contact-link" onClick={() => setMobileMenuOpen(false)}>
               <span>Get in Touch</span>
-            </a>
+            </Link>
           </div>
           
           <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Toggle Menu">

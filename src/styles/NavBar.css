@@ -35,14 +35,15 @@
 }
 
 .logo-image {
-  height: 36px;
-  width: auto;
+  height: 54px; /* was 36px */
+  width: 54px;
   transition: all var(--transition-fast);
 }
 
 .navbar.scrolled .logo-image {
-  height: 30px;
+  height: 50px; /* was 30px */
 }
+
 
 .nav-links {
   display: flex;

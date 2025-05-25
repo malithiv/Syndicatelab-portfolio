@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/WorkDetails.css';
 
+
 const WorkDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
@@ -19,7 +20,7 @@ const WorkDetails = () => {
       const projects = [
         {
           id: 1,
-          image: "src/assets/project-img1.jpg",
+          image: "src/assets/projectimg1.jpg",
           category: "Web Application",
           client: "Fintech Solutions Inc.",
           title: "Advanced Analytics Dashboard",

@@ -253,7 +253,7 @@ const BlogPost = () => {
         <h2>Article Not Found</h2>
         <p>The article you're looking for doesn't exist or has been removed.</p>
         <button 
-          onClick={() => navigate('/#blog')} 
+          onClick={() => navigate('/blog')} 
           className="btn btn-primary"
         >
           Back to Blog
@@ -362,7 +362,7 @@ const BlogPost = () => {
           
           <div className="blog-post-navigation">
             <button 
-              onClick={() => navigate('/#blog')} 
+              onClick={() => navigate('/blog')} 
               className="btn btn-outline blog-back-button"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">

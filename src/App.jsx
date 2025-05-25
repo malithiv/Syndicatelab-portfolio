@@ -71,10 +71,34 @@ const App = () => {
               </main>
             } />
             
+            {/* About Page Route */}
+            <Route path="/about" element={
+              <main className="main-content">
+                <AboutSection />
+                <Footer />
+              </main>
+            } />
+            
+            {/* Services Page Route */}
+            <Route path="/services" element={
+              <main className="main-content">
+                <ServicesSection />
+                <Footer />
+              </main>
+            } />
+            
             {/* Service Detail Page Route */}
             <Route path="/services/:serviceId" element={
               <main className="main-content">
                 <ServiceDetailPage />
+                <Footer />
+              </main>
+            } />
+            
+            {/* Work/Portfolio Page Route */}
+            <Route path="/work" element={
+              <main className="main-content">
+                <PortfolioSection />
                 <Footer />
               </main>
             } />
@@ -87,6 +111,22 @@ const App = () => {
               </main>
             } />
             
+            {/* Team Page Route */}
+            <Route path="/team" element={
+              <main className="main-content">
+                <TeamSection />
+                <Footer />
+              </main>
+            } />
+            
+            {/* Blog/Insights Page Route */}
+            <Route path="/blog" element={
+              <main className="main-content">
+                <BlogSection />
+                <Footer />
+              </main>
+            } />
+            
             {/* Blog Post Route */}
             <Route path="/blog/:id" element={
               <main className="main-content">
@@ -95,15 +135,7 @@ const App = () => {
               </main>
             } />
             
-            {/* Services Page Route (if you want a separate services page) */}
-            <Route path="/services" element={
-              <main className="main-content">
-                <ServicesSection />
-                <Footer />
-              </main>
-            } />
-
-            {/* Contact Page Route (for the "Discuss Your Project" link) */}
+            {/* Contact Page Route */}
             <Route path="/contact" element={
               <main className="main-content">
                 <ContactSection />

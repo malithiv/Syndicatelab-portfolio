@@ -7,7 +7,7 @@ const Preloader = () => {
   return (
     <div className="preloader">
       <div className="preloader-content">
-        <motion.div
+        {/* <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ 
@@ -17,7 +17,7 @@ const Preloader = () => {
           }}
         >
           <img src={sdlLogo} alt="Syndicate Digital Labs" className="preloader-logo" />
-        </motion.div>
+        </motion.div> */}
         
         <div className="preloader-spinner-container">
           <div className="preloader-spinner">
@@ -33,7 +33,7 @@ const Preloader = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          Loading Experience
+          Loading 
         </motion.p>
       </div>
     </div>
